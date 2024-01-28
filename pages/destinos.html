@@ -8,6 +8,9 @@
     <link rel="stylesheet" href="../css/style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -15,254 +18,279 @@
         <a class="nav-link" href="../index.html">
             <h1>Juli's TRVL Story</h1>
         </a>
-        <nav class="nav nav-pills justify-content-center">
-            <ul><a class="nav-link text-light bg-dark active" href="./destinos.html">Destinos</a></ul>
-            <ul><a class="nav-link text-dark" href="./recursos.html">Recursos</a></ul>
-            <ul><a class="nav-link text-dark" href="./sobre_juli.html">Sobre Juli</a></ul>
-            <ul><a class="nav-link text-dark" href="./contacto.html">Contacto</a></ul>
+        <nav class="navbar nav-pills navbar-expand-sm">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="dropdown">
+                        <a class="nav-link text-light bg-dark active dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button"
+                            aria-expanded="false">Destinos</a>
+                        <ul class="dropdown-menu dropdown-menu-dark">
+                            <li><a class="dropdown-item" href="./destinos.html">Destinos</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="./destinos.html#america_del_norte">América del Norte</a>
+                            </li>
+                            <li><a class="dropdown-item" href="./destinos.html#europa">Europa</a></li>
+                            <li><a class="dropdown-item" href="./destinos.html#america_del_sur">América del Sur</a></li>
+                        </ul>
+                    </li>
+                    <li><a class="nav-link text-dark" href="./recursos.html">Recursos</a></li>
+                    <li><a class="nav-link text-dark" href="./sobre_juli.html">Sobre Juli</a></li>
+                    <li><a class="nav-link text-dark" href="./contacto.html">Contacto</a></li>
+                </ul>
+            </div>
         </nav>
     </header>
+    
     <main>
-        <div class="fondo__clarito">
-        <h2>Destinos</h2>
-        <h3>Europa</h3>
-        <div class="caja">
-            <div class="contenedor__destinos">
-                <img class="imagen__galeria" src="../imagenes_iconos/paris.jpeg" alt="Paris">
-                <div class="destino">Paris, FR</div>
-                <p class="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur nam eius, libero minus
-                    quos laborum facere error labore illo quibusdam deserunt similique sequi hic laudantium earum
-                    reprehenderi natus nostrum rerum!</p>
+        <div class="background__color">
+            <h2>Destinos</h2>
+            <h3 id="america_del_norte">América del Norte</h3>
+            <div class="caja">
+                <div class="contenedor__destinos">
+                    <img class="imagen__galeria" src="../imagenes_iconos/orlando.jpeg" alt="Miami">
+                    <div class="destino">Miami/Orlando, USA</div>
+                    <p class="texto__destinos">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur nam
+                        eius, libero minus quos laborum facere error labore illo quibusdam deserunt similique sequi hic
+                        laudantium earum reprehenderi natus nostrum rerum!</p>
+                </div>
+                <div class="contenedor__destinos">
+                    <img class="imagen__galeria" src="../imagenes_iconos/nyc_cam.jpeg" alt="New York">
+                    <div class="destino">New York City, USA</div>
+                    <p class="texto__destinos">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur nam
+                        eius, libero minus quos laborum facere error labore illo quibusdam deserunt similique sequi hic
+                        laudantium earum reprehenderi natus nostrum rerum!</p>
+                </div>
+                <div class="contenedor__destinos">
+                    <img class="imagen__galeria" src="../imagenes_iconos/vegas_val.jpeg" alt="Vegas">
+                    <div class="destino">Las Vegas, USA</div>
+                    <p class="texto__destinos">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur nam
+                        eius, libero minus quos laborum facere error labore illo quibusdam deserunt similique sequi hic
+                        laudantium earum reprehenderi natus nostrum rerum!</p>
+                </div>
+                <div class="contenedor__destinos">
+                    <img class="imagen__galeria" src="../imagenes_iconos/avalon.jpg" alt="Isla Catalina">
+                    <div class="destino">Isla Catalina, USA</div>
+                    <p class="texto__destinos">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur nam
+                        eius, libero minus quos laborum facere error labore illo quibusdam deserunt similique sequi hic
+                        laudantium earum reprehenderi natus nostrum rerum!</p>
+                </div>
+                <div class="contenedor__destinos">
+                    <img class="imagen__galeria" src="../imagenes_iconos/milwaukee.jpeg" alt="Milwaukee">
+                    <div class="destino">St. Louis/Milwaukee, USA</div>
+                    <p class="texto__destinos">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur nam
+                        eius, libero minus quos laborum facere error labore illo quibusdam deserunt similique sequi hic
+                        laudantium earum reprehenderi natus nostrum rerum!</p>
+                </div>
+                <div class="contenedor__destinos">
+                    <img class="imagen__galeria" src="../imagenes_iconos/yosemite.jpeg" alt="Yosemite">
+                    <div class="destino">Yosemite, USA</div>
+                    <p class="texto__destinos">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur nam
+                        eius, libero minus quos laborum facere error labore illo quibusdam deserunt similique sequi hic
+                        laudantium earum reprehenderi natus nostrum rerum!</p>
+                </div>
+                <div class="contenedor__destinos">
+                    <img class="imagen__galeria" src="../imagenes_iconos/nola.jpg" alt="NoLa">
+                    <div class="destino">New Orleans, USA</div>
+                    <p class="texto__destinos">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur nam
+                        eius, libero minus quos laborum facere error labore illo quibusdam deserunt similique sequi hic
+                        laudantium earum reprehenderi natus nostrum rerum!</p>
+                </div>
+                <div class="contenedor__destinos">
+                    <img class="imagen__galeria" src="../imagenes_iconos/nash.jpg" alt="Nash">
+                    <div class="destino">Nashville, USA</div>
+                    <p class="texto__destinos">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur nam
+                        eius, libero minus quos laborum facere error labore illo quibusdam deserunt similique sequi hic
+                        laudantium earum reprehenderi natus nostrum rerum!</p>
+                </div>
+                <div class="contenedor__destinos">
+                    <img class="imagen__galeria" src="../imagenes_iconos/isla.jpg" alt="Isla mujeres">
+                    <div class="destino">Isla Mujeres, MX</div>
+                    <p class="texto__destinos">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur nam
+                        eius, libero minus quos laborum facere error labore illo quibusdam deserunt similique sequi hic
+                        laudantium earum reprehenderi natus nostrum rerum!</p>
+                </div>
+                <div class="contenedor__destinos">
+                    <img class="imagen__galeria" src="../imagenes_iconos/playacar.jpeg" alt="PlaCar">
+                    <div class="destino">Playa del Carmen, MX</div>
+                    <p class="texto__destinos">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur nam
+                        eius, libero minus quos laborum facere error labore illo quibusdam deserunt similique sequi hic
+                        laudantium earum reprehenderi natus nostrum rerum!</p>
+                </div>
+                <div class="contenedor__destinos">
+                    <img class="imagen__galeria" src="../imagenes_iconos/costa_mujeres.jpeg" alt="Costa">
+                    <div class="destino">Costa Mujeres, MX</div>
+                    <p class="texto__destinos">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur nam
+                        eius, libero minus quos laborum facere error labore illo quibusdam deserunt similique sequi hic
+                        laudantium earum reprehenderi natus nostrum rerum!</p>
+                </div>
+                <div class="contenedor__destinos">
+                    <img class="imagen__galeria" src="../imagenes_iconos/palms.jpg" alt="Palm Springs">
+                    <div class="destino">Palm Springs, USA</div>
+                    <p class="texto__destinos">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur nam
+                        eius, libero minus quos laborum facere error labore illo quibusdam deserunt similique sequi hic
+                        laudantium earum reprehenderi natus nostrum rerum!</p>
+                </div>
+                <div class="contenedor__destinos">
+                    <img class="imagen__galeria" src="../imagenes_iconos/waikiki.jpeg" alt="Waikiki">
+                    <div class="destino">Waikiki, USA</div>
+                    <p class="texto__destinos">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur nam
+                        eius, libero minus quos laborum facere error labore illo quibusdam deserunt similique sequi hic
+                        laudantium earum reprehenderi natus nostrum rerum!</p>
+                </div>
+                <div class="contenedor__destinos">
+                    <img class="imagen__galeria" src="../imagenes_iconos/denver.jpg" alt="denver">
+                    <div class="destino">Denver, USA</div>
+                    <p class="texto__destinos">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur nam
+                        eius, libero minus quos laborum facere error labore illo quibusdam deserunt similique sequi hic
+                        laudantium earum reprehenderi natus nostrum rerum!</p>
+                </div>
+                <div class="contenedor__destinos">
+                    <img class="imagen__galeria" src="../imagenes_iconos/la.jpeg" alt="LA">
+                    <div class="destino">Los Ángeles, USA</div>
+                    <p class="texto__destinos">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur nam
+                        eius, libero minus quos laborum facere error labore illo quibusdam deserunt similique sequi hic
+                        laudantium earum reprehenderi natus nostrum rerum!</p>
+                </div>
+                <div class="contenedor__destinos">
+                    <img class="imagen__galeria" src="../imagenes_iconos/camping.jpeg" alt="Camping">
+                    <div class="destino">Summit Lake, USA</div>
+                    <p class="texto__destinos">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur nam
+                        eius, libero minus quos laborum facere error labore illo quibusdam deserunt similique sequi hic
+                        laudantium earum reprehenderi natus nostrum rerum!</p>
+                </div>
+                <div class="contenedor__destinos">
+                    <img class="imagen__galeria" src="../imagenes_iconos/kissing.jpeg" alt="Kissing Camels">
+                    <div class="destino">Colorado Springs, USA</div>
+                    <p class="texto__destinos">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur nam
+                        eius, libero minus quos laborum facere error labore illo quibusdam deserunt similique sequi hic
+                        laudantium earum reprehenderi natus nostrum rerum!</p>
+                </div>
+                <div class="contenedor__destinos">
+                    <img class="imagen__galeria" src="../imagenes_iconos/canyon.jpeg" alt="Grand Canyon">
+                    <div class="destino">Gran Cañón, USA</div>
+                    <p class="texto__destinos">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur nam
+                        eius, libero minus quos laborum facere error labore illo quibusdam deserunt similique sequi hic
+                        laudantium earum reprehenderi natus nostrum rerum!</p>
+                </div>
+                <div class="contenedor__destinos">
+                    <img class="imagen__galeria" src="../imagenes_iconos/sandi.jpeg" alt="San Diego">
+                    <div class="destino">San Diego, USA</div>
+                    <p class="texto__destinos">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur nam
+                        eius, libero minus quos laborum facere error labore illo quibusdam deserunt similique sequi hic
+                        laudantium earum reprehenderi natus nostrum rerum!</p>
+                </div>
+                <div class="contenedor__destinos">
+                    <img class="imagen__galeria" src="../imagenes_iconos/zion.jpeg" alt="Zion">
+                    <div class="destino">Zion, USA</div>
+                    <p class="texto__destinos">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur nam
+                        eius, libero minus quos laborum facere error labore illo quibusdam deserunt similique sequi hic
+                        laudantium earum reprehenderi natus nostrum rerum!</p>
+                </div>
+                <div class="contenedor__destinos">
+                    <img class="imagen__galeria" src="../imagenes_iconos/vail.jpeg" alt="Camping">
+                    <div class="destino">Keystone/Vail/Avon, USA</div>
+                    <p class="texto__destinos">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur nam
+                        eius, libero minus quos laborum facere error labore illo quibusdam deserunt similique sequi hic
+                        laudantium earum reprehenderi natus nostrum rerum!</p>
+                </div>
+                <div class="contenedor__destinos">
+                    <img class="imagen__galeria" src="../imagenes_iconos/florabama.jpeg" alt="Florabama">
+                    <div class="destino">Florabama, USA</div>
+                    <p class="texto__destinos">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur nam
+                        eius, libero minus quos laborum facere error labore illo quibusdam deserunt similique sequi hic
+                        laudantium earum reprehenderi natus nostrum rerum!</p>
+                </div>
+                <div class="contenedor__destinos">
+                    <img class="imagen__galeria" src="../imagenes_iconos/steamboat.jpeg" alt="Steamboat">
+                    <div class="destino">Steamboat Springs, USA</div>
+                    <p class="texto__destinos">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur nam
+                        eius, libero minus quos laborum facere error labore illo quibusdam deserunt similique sequi hic
+                        laudantium earum reprehenderi natus nostrum rerum!</p>
+                </div>
             </div>
-            <div class="contenedor__destinos">
-                <img class="imagen__galeria" src="../imagenes_iconos/monaco.jpeg" alt="Monaco">
-                <div class="destino">Monte Carlo, MC</div>
-                <p class="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur nam eius, libero minus
-                    quos laborum facere error labore illo quibusdam deserunt similique sequi hic laudantium earum
-                    reprehenderi natus nostrum rerum!</p>
+            <h3 id="europa">Europa</h3>
+            <div class="caja">
+                <div class="contenedor__destinos">
+                    <img class="imagen__galeria" src="../imagenes_iconos/paris.jpeg" alt="Paris">
+                    <div class="destino">Paris, FR</div>
+                    <p class="texto__destinos">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur nam
+                        eius, libero minus quos laborum facere error labore illo quibusdam deserunt similique sequi hic
+                        laudantium earum reprehenderi natus nostrum rerum!</p>
+                </div>
+                <div class="contenedor__destinos">
+                    <img class="imagen__galeria" src="../imagenes_iconos/monaco.jpeg" alt="Monaco">
+                    <div class="destino">Monte Carlo, MC</div>
+                    <p class="texto__destinos">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur nam
+                        eius, libero minus quos laborum facere error labore illo quibusdam deserunt similique sequi hic
+                        laudantium earum reprehenderi natus nostrum rerum!</p>
+                </div>
+                <div class="contenedor__destinos">
+                    <img class="imagen__galeria" src="../imagenes_iconos/nice.jpeg" alt="Niza">
+                    <div class="destino">Niza, FR</div>
+                    <p class="texto__destinos">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur nam
+                        eius, libero minus quos laborum facere error labore illo quibusdam deserunt similique sequi hic
+                        laudantium earum reprehenderi natus nostrum rerum!</p>
+                </div>
+                <div class="contenedor__destinos">
+                    <img class="imagen__galeria" src="../imagenes_iconos/firenze.jpg" alt="Florencia">
+                    <div class="destino">Florencia, IT</div>
+                    <p class="texto__destinos">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur nam
+                        eius, libero minus quos laborum facere error labore illo quibusdam deserunt similique sequi hic
+                        laudantium earum reprehenderi natus nostrum rerum!</p>
+                </div>
+                <div class="contenedor__destinos">
+                    <img class="imagen__galeria" src="../imagenes_iconos/roma.jpg" alt="Roma">
+                    <div class="destino">Roma, IT</div>
+                    <p class="texto__destinos">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur nam
+                        eius, libero minus quos laborum facere error labore illo quibusdam deserunt similique sequi hic
+                        laudantium earum reprehenderi natus nostrum rerum!</p>
+                </div>
+                <div class="contenedor__destinos">
+                    <img class="imagen__galeria" src="../imagenes_iconos/positano.jpg" alt="Costa Amalfitana">
+                    <div class="destino">Costa Amalfitana, IT</div>
+                    <p class="texto__destinos">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur nam
+                        eius, libero minus quos laborum facere error labore illo quibusdam deserunt similique sequi hic
+                        laudantium earum reprehenderi natus nostrum rerum!</p>
+                </div>
+                <div class="contenedor__destinos">
+                    <img class="imagen__galeria" src="../imagenes_iconos/napoli.jpeg" alt="Napoles">
+                    <div class="destino">Nápoles, IT</div>
+                    <p class="texto__destinos">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur nam
+                        eius, libero minus quos laborum facere error labore illo quibusdam deserunt similique sequi hic
+                        laudantium earum reprehenderi natus nostrum rerum!</p>
+                </div>
             </div>
-            <div class="contenedor__destinos">
-                <img class="imagen__galeria" src="../imagenes_iconos/nice.jpeg" alt="Niza">
-                <div class="destino">Niza, FR</div>
-                <p class="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur nam eius, libero minus
-                    quos laborum facere error labore illo quibusdam deserunt similique sequi hic laudantium earum
-                    reprehenderi natus nostrum rerum!</p>
+
+            <h3 id="america_del_sur">América del Sur</h3>
+            <div class="caja">
+                <div class="contenedor__destinos">
+                    <img class="imagen__galeria" src="../imagenes_iconos/steamboat.jpeg" alt="Steamboat">
+                    <div class="destino">Argentina</div>
+                    <p class="texto__destinos">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur nam
+                        eius, libero minus quos laborum facere error labore illo quibusdam deserunt similique sequi hic
+                        laudantium earum reprehenderi natus nostrum rerum!</p>
+                </div>
+                <div class="contenedor__destinos">
+                    <img class="imagen__galeria" src="../imagenes_iconos/steamboat.jpeg" alt="Steamboat">
+                    <div class="destino">Brasil</div>
+                    <p class="texto__destinos">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur nam
+                        eius, libero minus quos laborum facere error labore illo quibusdam deserunt similique sequi hic
+                        laudantium earum reprehenderi natus nostrum rerum!</p>
+                </div>
+                <div class="contenedor__destinos">
+                    <img class="imagen__galeria" src="../imagenes_iconos/steamboat.jpeg" alt="Steamboat">
+                    <div class="destino">Uruguay</div>
+                    <p class="texto__destinos">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur nam
+                        eius, libero minus quos laborum facere error labore illo quibusdam deserunt similique sequi hic
+                        laudantium earum reprehenderi natus nostrum rerum!</p>
+                </div>
             </div>
-            <div class="contenedor__destinos">
-                <img class="imagen__galeria" src="../imagenes_iconos/firenze.jpg" alt="Florencia">
-                <div class="destino">Florencia, IT</div>
-                <p class="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur nam eius, libero minus
-                    quos laborum facere error labore illo quibusdam deserunt similique sequi hic laudantium earum
-                    reprehenderi natus nostrum rerum!</p>
-            </div>
-            <div class="contenedor__destinos">
-                <img class="imagen__galeria" src="../imagenes_iconos/roma.jpg" alt="Roma">
-                <div class="destino">Roma, IT</div>
-                <p class="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur nam eius, libero minus
-                    quos laborum facere error labore illo quibusdam deserunt similique sequi hic laudantium earum
-                    reprehenderi natus nostrum rerum!</p>
-            </div>
-            <div class="contenedor__destinos">
-                <img class="imagen__galeria" src="../imagenes_iconos/positano.jpg" alt="Costa Amalfitana">
-                <div class="destino">Costa Amalfitana, IT</div>
-                <p class="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur nam eius, libero minus
-                    quos laborum facere error labore illo quibusdam deserunt similique sequi hic laudantium earum
-                    reprehenderi natus nostrum rerum!</p>
-            </div>
-            <div class="contenedor__destinos">
-                <img class="imagen__galeria" src="../imagenes_iconos/napoli.jpeg" alt="Napoles">
-                <div class="destino">Nápoles, IT</div>
-                <p class="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur nam eius, libero minus
-                    quos laborum facere error labore illo quibusdam deserunt similique sequi hic laudantium earum
-                    reprehenderi natus nostrum rerum!</p>
-            </div>
-        </div>
-        <h3>América del Norte</h3>
-        <div class="caja">
-            <div class="contenedor__destinos">
-                <img class="imagen__galeria" src="../imagenes_iconos/orlando.jpeg" alt="Miami">
-                <div class="destino">Miami/Orlando, USA</div>
-                <p class="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur nam eius, libero minus
-                    quos laborum facere error labore illo quibusdam deserunt similique sequi hic laudantium earum
-                    reprehenderi natus nostrum rerum!</p>
-            </div>
-            <div class="contenedor__destinos">
-                <img class="imagen__galeria" src="../imagenes_iconos/nyc_cam.jpeg" alt="New York">
-                <div class="destino">New York City, USA</div>
-                <p class="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur nam eius, libero minus
-                    quos laborum facere error labore illo quibusdam deserunt similique sequi hic laudantium earum
-                    reprehenderi natus nostrum rerum!</p>
-            </div>
-            <div class="contenedor__destinos">
-                <img class="imagen__galeria" src="../imagenes_iconos/vegas_val.jpeg" alt="Vegas">
-                <div class="destino">Las Vegas, USA</div>
-                <p class="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur nam eius, libero minus
-                    quos laborum facere error labore illo quibusdam deserunt similique sequi hic laudantium earum
-                    reprehenderi natus nostrum rerum!</p>
-            </div>
-            <div class="contenedor__destinos">
-                <img class="imagen__galeria" src="../imagenes_iconos/avalon.jpg" alt="Isla Catalina">
-                <div class="destino">Isla Catalina, USA</div>
-                <p class="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur nam eius, libero minus
-                    quos laborum facere error labore illo quibusdam deserunt similique sequi hic laudantium earum
-                    reprehenderi natus nostrum rerum!</p>
-            </div>
-            <div class="contenedor__destinos">
-                <img class="imagen__galeria" src="../imagenes_iconos/milwaukee.jpeg" alt="Milwaukee">
-                <div class="destino">St. Louis/Milwaukee, USA</div>
-                <p class="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur nam eius, libero minus
-                    quos laborum facere error labore illo quibusdam deserunt similique sequi hic laudantium earum
-                    reprehenderi natus nostrum rerum!</p>
-            </div>
-            <div class="contenedor__destinos">
-                <img class="imagen__galeria" src="../imagenes_iconos/yosemite.jpeg" alt="Yosemite">
-                <div class="destino">Yosemite, USA</div>
-                <p class="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur nam eius, libero minus
-                    quos laborum facere error labore illo quibusdam deserunt similique sequi hic laudantium earum
-                    reprehenderi natus nostrum rerum!</p>
-            </div>
-            <div class="contenedor__destinos">
-                <img class="imagen__galeria" src="../imagenes_iconos/nola.jpg" alt="NoLa">
-                <div class="destino">New Orleans, USA</div>
-                <p class="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur nam eius, libero minus
-                    quos laborum facere error labore illo quibusdam deserunt similique sequi hic laudantium earum
-                    reprehenderi natus nostrum rerum!</p>
-            </div>
-            <div class="contenedor__destinos">
-                <img class="imagen__galeria" src="../imagenes_iconos/nash.jpg" alt="Nash">
-                <div class="destino">Nashville, USA</div>
-                <p class="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur nam eius, libero minus
-                    quos laborum facere error labore illo quibusdam deserunt similique sequi hic laudantium earum
-                    reprehenderi natus nostrum rerum!</p>
-            </div>
-            <div class="contenedor__destinos">
-                <img class="imagen__galeria" src="../imagenes_iconos/isla.jpg" alt="Isla mujeres">
-                <div class="destino">Isla Mujeres, MX</div>
-                <p class="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur nam eius, libero minus
-                    quos laborum facere error labore illo quibusdam deserunt similique sequi hic laudantium earum
-                    reprehenderi natus nostrum rerum!</p>
-            </div>
-            <div class="contenedor__destinos">
-                <img class="imagen__galeria" src="../imagenes_iconos/playacar.jpeg" alt="PlaCar">
-                <div class="destino">Playa del Carmen, MX</div>
-                <p class="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur nam eius, libero minus
-                    quos laborum facere error labore illo quibusdam deserunt similique sequi hic laudantium earum
-                    reprehenderi natus nostrum rerum!</p>
-            </div>
-            <div class="contenedor__destinos">
-                <img class="imagen__galeria" src="../imagenes_iconos/costa_mujeres.jpeg" alt="Costa">
-                <div class="destino">Costa Mujeres, MX</div>
-                <p class="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur nam eius, libero minus
-                    quos laborum facere error labore illo quibusdam deserunt similique sequi hic laudantium earum
-                    reprehenderi natus nostrum rerum!</p>
-            </div>
-            <div class="contenedor__destinos">
-                <img class="imagen__galeria" src="../imagenes_iconos/palms.jpg" alt="Palm Springs">
-                <div class="destino">Palm Springs, USA</div>
-                <p class="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur nam eius, libero minus
-                    quos laborum facere error labore illo quibusdam deserunt similique sequi hic laudantium earum
-                    reprehenderi natus nostrum rerum!</p>
-            </div>
-            <div class="contenedor__destinos">
-                <img class="imagen__galeria" src="../imagenes_iconos/waikiki.jpeg" alt="Waikiki">
-                <div class="destino">Waikiki, USA</div>
-                <p class="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur nam eius, libero minus
-                    quos laborum facere error labore illo quibusdam deserunt similique sequi hic laudantium earum
-                    reprehenderi natus nostrum rerum!</p>
-            </div>
-            <div class="contenedor__destinos">
-                <img class="imagen__galeria" src="../imagenes_iconos/denver.jpg" alt="denver">
-                <div class="destino">Denver, USA</div>
-                <p class="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur nam eius, libero minus
-                    quos laborum facere error labore illo quibusdam deserunt similique sequi hic laudantium earum
-                    reprehenderi natus nostrum rerum!</p>
-            </div>
-            <div class="contenedor__destinos">
-                <img class="imagen__galeria" src="../imagenes_iconos/la.jpeg" alt="LA">
-                <div class="destino">Los Ángeles, USA</div>
-                <p class="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur nam eius, libero minus
-                    quos laborum facere error labore illo quibusdam deserunt similique sequi hic laudantium earum
-                    reprehenderi natus nostrum rerum!</p>
-            </div>
-            <div class="contenedor__destinos">
-                <img class="imagen__galeria" src="../imagenes_iconos/camping.jpeg" alt="Camping">
-                <div class="destino">Summit Lake, USA</div>
-                <p class="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur nam eius, libero minus
-                    quos laborum facere error labore illo quibusdam deserunt similique sequi hic laudantium earum
-                    reprehenderi natus nostrum rerum!</p>
-            </div>
-            <div class="contenedor__destinos">
-                <img class="imagen__galeria" src="../imagenes_iconos/kissing.jpeg" alt="Kissing Camels">
-                <div class="destino">Colorado Springs, USA</div>
-                <p class="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur nam eius, libero minus
-                    quos laborum facere error labore illo quibusdam deserunt similique sequi hic laudantium earum
-                    reprehenderi natus nostrum rerum!</p>
-            </div>
-            <div class="contenedor__destinos">
-                <img class="imagen__galeria" src="../imagenes_iconos/canyon.jpeg" alt="Grand Canyon">
-                <div class="destino">Gran Cañón, USA</div>
-                <p class="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur nam eius, libero minus
-                    quos laborum facere error labore illo quibusdam deserunt similique sequi hic laudantium earum
-                    reprehenderi natus nostrum rerum!</p>
-            </div>
-            <div class="contenedor__destinos">
-                <img class="imagen__galeria" src="../imagenes_iconos/sandi.jpeg" alt="San Diego">
-                <div class="destino">San Diego, USA</div>
-                <p class="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur nam eius, libero minus
-                    quos laborum facere error labore illo quibusdam deserunt similique sequi hic laudantium earum
-                    reprehenderi natus nostrum rerum!</p>
-            </div>
-            <div class="contenedor__destinos">
-                <img class="imagen__galeria" src="../imagenes_iconos/zion.jpeg" alt="Zion">
-                <div class="destino">Zion, USA</div>
-                <p class="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur nam eius, libero minus
-                    quos laborum facere error labore illo quibusdam deserunt similique sequi hic laudantium earum
-                    reprehenderi natus nostrum rerum!</p>
-            </div>
-            <div class="contenedor__destinos">
-                <img class="imagen__galeria" src="../imagenes_iconos/vail.jpeg" alt="Camping">
-                <div class="destino">Keystone/Vail/Avon, USA</div>
-                <p class="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur nam eius, libero minus
-                    quos laborum facere error labore illo quibusdam deserunt similique sequi hic laudantium earum
-                    reprehenderi natus nostrum rerum!</p>
-            </div>
-            <div class="contenedor__destinos">
-                <img class="imagen__galeria" src="../imagenes_iconos/florabama.jpeg" alt="Florabama">
-                <div class="destino">Florabama, USA</div>
-                <p class="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur nam eius, libero minus
-                    quos laborum facere error labore illo quibusdam deserunt similique sequi hic laudantium earum
-                    reprehenderi natus nostrum rerum!</p>
-            </div>
-            <div class="contenedor__destinos">
-                <img class="imagen__galeria" src="../imagenes_iconos/steamboat.jpeg" alt="Steamboat">
-                <div class="destino">Steamboat Springs, USA</div>
-                <p class="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur nam eius, libero minus
-                    quos laborum facere error labore illo quibusdam deserunt similique sequi hic laudantium earum
-                    reprehenderi natus nostrum rerum!</p>
-            </div>
-        </div>
-        <h3>América del Sur</h3>
-        <div class="caja">
-            <div class="contenedor__destinos">
-                <img class="imagen__galeria" src="../imagenes_iconos/steamboat.jpeg" alt="Steamboat">
-                <div class="destino">Argentina</div>
-                <p class="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur nam eius, libero minus
-                    quos laborum facere error labore illo quibusdam deserunt similique sequi hic laudantium earum
-                    reprehenderi natus nostrum rerum!</p>
-            </div>            <div class="contenedor__destinos">
-                <img class="imagen__galeria" src="../imagenes_iconos/steamboat.jpeg" alt="Steamboat">
-                <div class="destino">Brasil</div>
-                <p class="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur nam eius, libero minus
-                    quos laborum facere error labore illo quibusdam deserunt similique sequi hic laudantium earum
-                    reprehenderi natus nostrum rerum!</p>
-            </div>            <div class="contenedor__destinos">
-                <img class="imagen__galeria" src="../imagenes_iconos/steamboat.jpeg" alt="Steamboat">
-                <div class="destino">Uruguay</div>
-                <p class="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur nam eius, libero minus
-                    quos laborum facere error labore illo quibusdam deserunt similique sequi hic laudantium earum
-                    reprehenderi natus nostrum rerum!</p>
-            </div>
-        </div>
 
     </main>
     <footer id="pie_de_pagina">

@@ -21,14 +21,19 @@ h3 {
     text-align: center;
 }
 
+.background__color {
+    background-color: #dfdee0;
+}
+
 /* header */
 .header {
     background-color: #B094A8;
-    padding: 0.5rem;
+    padding: 0.5rem 0.5rem 0px 0.3rem;
 }
 
 .nav-link {
     border-radius: 10px;
+    padding: 3%;
 }
 
 .nav-link:hover {
@@ -38,6 +43,10 @@ h3 {
 h1:hover {
     background-color: #7c4964;
     border-radius: 10px;
+}
+
+.dropdown-menu {
+    background-color: #dfdee0 ;
 }
 
 /* header */
@@ -62,8 +71,8 @@ h1:hover {
 
 .bienvenidos {
     background-color: #dfdee07c;
-    position: absolute;
-    top: 25%;
+    position: relative;
+    top: 15%;
     left: 10%;
     width: 45%;
     font-size: 1.7rem;
@@ -73,8 +82,8 @@ h1:hover {
 
 .intro {
     background-color: #dfdee07c;
-    position: absolute;
-    top: 43%;
+    position: relative;
+    top: 15%;
     left: 10%;
     width: 45%;
     font-size: 1.3rem;
@@ -95,8 +104,12 @@ h1:hover {
 }
 
 @media (min-width: 818px) and (max-width: 1332px) {
-    .bienvenidos{
-        top: 30%;
+    .bienvenidos {
+        top: 20%;
+    }
+
+    .intro {
+        top: 20%;
     }
 }
 
@@ -106,7 +119,7 @@ h1:hover {
     }
 
     .intro {
-        top: 42%;
+        top: 35%;
     }
 }
 
@@ -124,7 +137,8 @@ h1:hover {
 
 .imagen__galeria {
     width: 100%;
-    padding: 5%;
+    padding: 3%;
+    border-radius: 15px;
 }
 
 .destino {
@@ -135,7 +149,7 @@ h1:hover {
 
 .galeria__index :hover {
     background-color: #7c4964;
-    border-radius: 5px;
+    border-radius: 15px;
 }
 
 @media (max-width: 750px){
@@ -145,7 +159,7 @@ h1:hover {
     .destino {
         padding: 2%;
     }
-    .img_galeria {
+    .imagen__galeria {
         padding: 2% 2% 0% 2%;
     }
 }
@@ -156,7 +170,7 @@ h1:hover {
 
 .caja {
     display: grid;
-    gap: 0.3rem;
+    gap: 0.5rem;
     grid-template-columns: 1fr 1fr;
     padding: 0px 0.3rem;
 }
@@ -165,8 +179,9 @@ h1:hover {
     justify-content: center;
 }
 
-.fondo__clarito {
-    background-color: #dfdee0;
+.texto__destinos {
+    text-align: justify;
+    padding: 0.5rem;
 }
 
 @media (max-width: 600px) {
@@ -175,10 +190,65 @@ h1:hover {
     }
 }
 
-@media (min-width: 1100px) {
+@media (min-width: 900px) {
     .caja {
         grid-template-columns: repeat(3, 1fr);
     }
 }
 
 /* destinos body */
+
+/* sobre mi body */
+
+.caja__sobre_mi {
+    display: grid;
+    gap: 0.5rem;
+    grid-template-columns: 1.5fr 2fr;
+    align-items: center;
+}
+
+.texto__sobre_mi {
+    text-align: justify;
+    padding: 2rem;
+    font-size: 1.4rem;
+}
+
+.caja__au_pair {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.item1 {
+    text-align: center;
+}
+
+.items__au_pair {
+    padding: 3%;
+}
+
+.texto__au_pair {
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+.imagen__au_pair {
+    width: 100%;
+    border-radius: 15px;
+}
+
+@media (max-width: 700px) {
+    .caja__sobre_mi {
+        grid-template-columns: 100%;
+    }
+
+    .caja__au_pair {
+        grid-template-rows: 0.1fr 1fr 0.1fr;
+        grid-template-columns: 100%;
+    }
+
+    .imagen__au_pair {
+        width: 49.5%;
+    }
+}
+
+/* sobre mi body */
