@@ -231,7 +231,7 @@ h1:hover {
 .imagen__au_pair {
     width: 100%;
     border-radius: 15px;
-    padding: 0px 3%;
+    padding: 3%;
 }
 
 @media (max-width: 700px) {
@@ -294,3 +294,31 @@ h1:hover {
 }
 
 /* contacto body */
+
+/* recursos body */
+
+.caja__recursos {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin: 1rem;
+    gap: 1rem;
+}
+
+.carta {
+    padding: 0.5rem;;
+}
+
+.texto__recursos {
+    margin: 1rem;
+    text-align: justify;
+}
+
+#boton {
+    background-color: #7c4964;
+    border: none;
+    width: 70%;
+    margin: 0px 15%;
+}
+
+
+/* recursos body */
