@@ -45,10 +45,6 @@ h1:hover {
     border-radius: 10px;
 }
 
-.dropdown-menu {
-    background-color: #dfdee0 ;
-}
-
 /* header */
 
 /* footer */
@@ -123,7 +119,7 @@ h1:hover {
     }
 }
 
-.ultimos__destinos {
+.caja__ultimos_destinos {
     display: grid;
     grid-template-rows: 0.1fr 3fr;
     background-color: #dfdee0;
@@ -159,20 +155,17 @@ h1:hover {
     .destino {
         padding: 2%;
     }
-    .imagen__galeria {
-        padding: 2% 2% 0% 2%;
-    }
 }
 
 /* index body */
 
 /* destinos body */
 
-.caja {
+.caja__destinos {
     display: grid;
     gap: 0.5rem;
     grid-template-columns: 1fr 1fr;
-    padding: 0px 0.3rem;
+    padding: 0px 0.5rem;
 }
 
 .contenedor__destinos {
@@ -185,13 +178,13 @@ h1:hover {
 }
 
 @media (max-width: 600px) {
-    .caja {
+    .caja__destinos {
         grid-template-columns: 100%;
     }
 }
 
 @media (min-width: 900px) {
-    .caja {
+    .caja__destinos {
         grid-template-columns: repeat(3, 1fr);
     }
 }
@@ -216,6 +209,9 @@ h1:hover {
 .caja__au_pair {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    background-color: #B094A8;
+    margin: 3%;
+    border-radius: 10px;
 }
 
 .item1 {
@@ -224,6 +220,7 @@ h1:hover {
 
 .items__au_pair {
     padding: 3%;
+    align-self: center;
 }
 
 .texto__au_pair {
@@ -234,6 +231,7 @@ h1:hover {
 .imagen__au_pair {
     width: 100%;
     border-radius: 15px;
+    padding: 0px 3%;
 }
 
 @media (max-width: 700px) {
@@ -252,3 +250,47 @@ h1:hover {
 }
 
 /* sobre mi body */
+
+/* contacto body */
+
+.caja__contacto {
+    margin: 1rem;
+    padding: 1rem;
+    border-radius: 15px;
+    background-color: #B094A8;
+}
+
+#enviar {
+    background-color: #7c4964;
+    border: none;
+    width: 15%;
+    margin: 1rem 0px 0.5rem;
+}
+
+.caja__logos {
+    display: flex;
+    margin: 1rem 30%;
+    background-color: #B094A8;
+    padding: 0.5rem 1rem;
+    border-radius: 15px;
+    gap: 5%;
+}
+
+.logo {
+    width: 100%;
+    padding: 5%;
+}
+
+@media (min-width: 900px) and (max-width: 1199px) {
+    .caja__logos {
+        margin: 1rem 35%;
+    }
+}
+
+@media (min-width: 1200px) {
+    .caja__logos {
+        margin: 1rem 40%;
+    }
+}
+
+/* contacto body */
