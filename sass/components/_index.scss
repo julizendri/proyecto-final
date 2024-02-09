@@ -1,6 +1,8 @@
 @import "../base/listas";
 @import "../base/mixins";
 @import "../base/extends";
+@import "../base/variables";
+
 
 /* index body */
 main {
@@ -50,15 +52,12 @@ main {
     }
 
     .caja__ultimos_destinos {
-        display: grid;
-        grid-template-rows: 0.1fr 3fr;
+        @include grid (0.1fr 3fr, 0, 0);
         background-color: nth($colores, 1);
         justify-items: center;
 
         .galeria__index {
-            display: flex;
-            justify-items: center;
-            margin: 0px 2rem;
+            @include flex (0, 0px 2rem, 0);
 
             .imagen__galeria {
                 @extend %imagen-galeria;

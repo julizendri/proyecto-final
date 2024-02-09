@@ -1,0 +1,72 @@
+@import "../base/listas";
+@import "../base/mixins";
+@import "../base/extends";
+@import "../base/variables";
+
+/* sobre mi body */
+
+
+main {
+    .caja__sobre_mi {
+        @include grid-columna (1.5fr 2fr, 0.5rem, 2rem);
+        align-items: center;
+
+        .imagen__galeria {
+            @extend %imagen-galeria;
+        }
+
+        .texto__sobre_mi {
+            text-align: justify;
+            font-size: 1.4rem;
+        }
+
+    }
+
+    @media (max-width: 700px) {
+        .caja__sobre_mi {
+            grid-template-columns: 100%;
+        }
+    }
+    .item1 {
+        text-align: center;
+    }
+
+    .caja__au_pair {
+        @include grid-columna (repeat(3, 1fr), 0,0);
+        background-color: nth($colores, 2);
+        margin: 3%;
+        border-radius: 10px;
+
+
+        .items__au_pair {
+            padding: 3%;
+            align-self: center;
+        }
+
+        .texto__au_pair {
+            text-align: center;
+            font-size: 1.2rem;
+        }
+
+        .imagen__au_pair {
+            width: 100%;
+            border-radius: 15px;
+            padding: 3%;
+        }
+
+        @media (max-width: 700px) {
+            .imagen__au_pair {
+                width: 49.5%;
+                border-radius: 20px;
+            }
+        }
+    }
+
+    @media (max-width: 700px) {
+        .caja__au_pair {
+            grid-template-rows: 0.1fr 1fr 0.1fr;
+            grid-template-columns: 100%;
+        }
+    }
+
+}

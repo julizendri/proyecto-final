@@ -1,4 +1,7 @@
 @import "../base/listas";
+@import "../base/mixins";
+@import "../base/extends";
+@import "../base/variables";
 
 * {
     padding: 0;
@@ -12,11 +15,11 @@ h1 {
 }
 
 h2 {
-    padding: 0.5rem 0px 0px 0.5rem;
+    padding: 0.5rem 0px 0px 1rem;
 }
 
 h3 {
-    padding: 0.7rem 0.5rem 0.3rem 0.5rem;
+    padding: 0.7rem 1rem 0.3rem 1rem;
 }
 
 .texto__centrado {
