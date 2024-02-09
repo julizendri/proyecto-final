@@ -1,0 +1,8 @@
+@import "../base/listas";
+
+/* footer */
+#pie_de_pagina {
+    background-color: nth($colores, 2);
+    text-align: center;
+    padding: 2%;
+}

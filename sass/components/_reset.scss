@@ -1,0 +1,28 @@
+@import "../base/listas";
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande';
+}
+
+h1 {
+    text-align: center;
+}
+
+h2 {
+    padding: 0.5rem 0px 0px 0.5rem;
+}
+
+h3 {
+    padding: 0.7rem 0.5rem 0.3rem 0.5rem;
+}
+
+.texto__centrado {
+    text-align: center;
+}
+
+.background__color {
+    background-color: nth($colores, 1);
+}

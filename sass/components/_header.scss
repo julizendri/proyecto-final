@@ -1,0 +1,17 @@
+@import "../base/listas";
+
+/* header */
+header {
+    background-color: nth($colores, 2);
+    padding-top: 0.5rem;
+    .nav-link {
+        border-radius: 10px;
+    }
+    .nav-link:hover {
+        background-color: nth($colores, 3);
+    }
+    h1:hover {
+        background-color: nth($colores, 3);
+        border-radius: 10px;
+    }
+}
