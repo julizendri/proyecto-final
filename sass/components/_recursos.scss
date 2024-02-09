@@ -2,3 +2,33 @@
 @import "../base/mixins";
 @import "../base/extends";
 @import "../base/variables";
+
+/* recursos body */
+
+main {
+    .texto__recursos {
+        margin: 1rem;
+        text-align: justify;
+    }
+
+    .caja__recursos {
+        @include grid-columna (repeat(4, 1fr), 1rem, 1rem, 0);
+
+        .carta {
+            padding: 0.5rem;
+        }
+
+        #boton {
+            background-color: nth($colores, 3);
+            border: none;
+            width: 70%;
+            margin: 0px 15%;
+        }
+    }
+
+    @media (max-width: 750px) {
+        .caja__recursos {
+            grid-template-columns: repeat(3, 1fr)
+        }
+    }
+}

@@ -8,7 +8,7 @@
 
 main {
     .caja__sobre_mi {
-        @include grid-columna (1.5fr 2fr, 0.5rem, 2rem);
+        @include grid-columna (1.5fr 2fr, 0.5rem, 2rem, 0);
         align-items: center;
 
         .imagen__galeria {
@@ -32,9 +32,8 @@ main {
     }
 
     .caja__au_pair {
-        @include grid-columna (repeat(3, 1fr), 0,0);
+        @include grid-columna (repeat(3, 1fr), 0,0, 3%);
         background-color: nth($colores, 2);
-        margin: 3%;
         border-radius: 10px;
 
 

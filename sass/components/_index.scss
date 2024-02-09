@@ -52,7 +52,7 @@ main {
     }
 
     .caja__ultimos_destinos {
-        @include grid (0.1fr 3fr, 0, 0);
+        @include grid (0.1fr 3fr, 0, 0, 0);
         background-color: nth($colores, 1);
         justify-items: center;
 

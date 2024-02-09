@@ -14,18 +14,20 @@
     width: 50%;
 }
 
-@mixin grid ($tamaño-filas, $gap, $padding) {
+@mixin grid ($tamaño-filas, $gap, $padding, $margin) {
     display: grid;
     grid-template-rows: $tamaño-filas;
     gap: $gap;
     padding: $padding;
+    margin: $margin;
 }
 
-@mixin grid-columna ($tamaño-filas, $gap, $padding) {
+@mixin grid-columna ($tamaño-filas, $gap, $padding, $margin) {
     display: grid;
     grid-template-columns: $tamaño-filas;
     gap: $gap;
     padding: $padding;
+    margin: $margin;
 }
 
 @mixin flex ($gap, $margin, $padding) {

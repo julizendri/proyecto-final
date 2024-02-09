@@ -142,6 +142,7 @@ main .caja__ultimos_destinos {
   grid-template-rows: 0.1fr 3fr;
   gap: 0;
   padding: 0;
+  margin: 0;
   background-color: #dfdee0;
   justify-items: center; }
   main .caja__ultimos_destinos .galeria__index {
@@ -166,6 +167,29 @@ main .caja__ultimos_destinos {
   padding: 0.5rem;
   border-radius: 15px; }
 
+/* recursos body */
+main .texto__recursos {
+  margin: 1rem;
+  text-align: justify; }
+
+main .caja__recursos {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+  padding: 1rem;
+  margin: 0; }
+  main .caja__recursos .carta {
+    padding: 0.5rem; }
+  main .caja__recursos #boton {
+    background-color: #7c4964;
+    border: none;
+    width: 70%;
+    margin: 0px 15%; }
+
+@media (max-width: 750px) {
+  main .caja__recursos {
+    grid-template-columns: repeat(3, 1fr); } }
+
 .caja__destinos .contenedor__destinos .imagen__galeria, main .caja__ultimos_destinos .galeria__index .imagen__galeria, main .caja__sobre_mi .imagen__galeria {
   width: 100%;
   padding: 0.5rem;
@@ -177,6 +201,7 @@ main .caja__sobre_mi {
   grid-template-columns: 1.5fr 2fr;
   gap: 0.5rem;
   padding: 2rem;
+  margin: 0;
   align-items: center; }
   main .caja__sobre_mi .texto__sobre_mi {
     text-align: justify;
@@ -194,8 +219,8 @@ main .caja__au_pair {
   grid-template-columns: repeat(3, 1fr);
   gap: 0;
   padding: 0;
-  background-color: #B094A8;
   margin: 3%;
+  background-color: #B094A8;
   border-radius: 10px; }
   main .caja__au_pair .items__au_pair {
     padding: 3%;
