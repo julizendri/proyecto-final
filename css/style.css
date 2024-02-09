@@ -35,6 +35,35 @@ h3 {
   padding: 0.5rem;
   border-radius: 15px; }
 
+main .caja__contacto {
+  margin: 1rem;
+  padding: 2rem;
+  border-radius: 15px;
+  background-color: #B094A8; }
+  main .caja__contacto #enviar {
+    background-color: #7c4964;
+    border: none;
+    width: 15%;
+    margin: 1rem 0px 0.5rem; }
+
+main .caja__logos {
+  display: flex;
+  gap: 5%;
+  margin: 1rem 30%;
+  padding: 0.5rem 1rem;
+  justify-items: center;
+  background-color: #B094A8;
+  border-radius: 15px; }
+  main .caja__logos .logo {
+    width: 100%;
+    padding: 5%; }
+  @media (min-width: 900px) and (max-width: 1199px) {
+    main .caja__logos .caja__logos {
+      margin: 1rem 35%; } }
+  @media (min-width: 1200px) {
+    main .caja__logos .caja__logos {
+      margin: 1rem 40%; } }
+
 .caja__destinos .contenedor__destinos .imagen__galeria, main .caja__ultimos_destinos .galeria__index .imagen__galeria, main .caja__sobre_mi .imagen__galeria {
   width: 100%;
   padding: 0.5rem;
