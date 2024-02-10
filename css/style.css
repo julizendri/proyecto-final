@@ -169,16 +169,16 @@ main .imagenFondo {
 main .caja__ultimos_destinos {
   display: grid;
   grid-template-rows: 0.1fr 3fr;
-  gap: 0;
-  padding: 0;
-  margin: 0;
+  gap: 0px;
+  padding: 0px;
+  margin: 0px;
   background-color: #dfdee0;
   justify-items: center; }
   main .caja__ultimos_destinos .galeria__index {
     display: flex;
-    gap: 0;
+    gap: 0px;
     margin: 0px 2rem;
-    padding: 0;
+    padding: 0px;
     justify-items: center; }
     main .caja__ultimos_destinos .galeria__index .destino {
       font-size: 1.2rem;
@@ -206,7 +206,7 @@ main .caja__recursos {
   grid-template-columns: repeat(4, 1fr);
   gap: 1rem;
   padding: 1rem;
-  margin: 0; }
+  margin: 0px; }
   main .caja__recursos .carta {
     padding: 0.5rem; }
   main .caja__recursos #boton {
@@ -230,7 +230,7 @@ main .caja__sobre_mi {
   grid-template-columns: 1.5fr 2fr;
   gap: 0.5rem;
   padding: 2rem;
-  margin: 0;
+  margin: 0px;
   align-items: center; }
   main .caja__sobre_mi .texto__sobre_mi {
     text-align: justify;
@@ -246,8 +246,8 @@ main .item1 {
 main .caja__au_pair {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 0;
-  padding: 0;
+  gap: 0px;
+  padding: 0px;
   margin: 3%;
   background-color: #B094A8;
   border-radius: 10px; }
