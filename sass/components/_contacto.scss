@@ -3,9 +3,11 @@
 @import "../base/extends";
 @import "../base/variables";
 
+/* contacto body */
+
 main {
     .caja__contacto {
-        margin: 1rem;
+        margin: 1rem 5rem;
         padding: 2rem;
         border-radius: 15px;
         background-color: nth($colores, 2);
@@ -13,7 +15,7 @@ main {
         #enviar {
             background-color: nth($colores, 3);
             border: none;
-            width: 15%;
+            width: fit-content;
             margin: 1rem $none 0.5rem;
         }
     }

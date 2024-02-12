@@ -5,13 +5,14 @@
   border-radius: 15px; }
 
 * {
-  padding: 0;
-  margin: 0;
+  padding: 0px;
+  margin: 0px;
   box-sizing: border-box;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande'; }
 
 h1 {
-  text-align: center; }
+  text-align: center;
+  padding: 0px 1rem; }
 
 h2 {
   padding: 0.5rem 0px 0px 1rem; }
@@ -25,25 +26,32 @@ h3 {
 .background__color {
   background-color: #dfdee0; }
 
-.caja__destinos .contenedor__destinos .imagen__galeria, main .caja__ultimos_destinos .galeria__index .imagen__galeria, main .caja__sobre_mi .imagen__galeria {
-  width: 100%;
-  padding: 0.5rem;
-  border-radius: 15px; }
+body {
+  height: 100vh;
+  display: grid;
+  grid-template-areas: 'header' 'main' 'footer';
+  grid-template-columns: auto; }
 
 .caja__destinos .contenedor__destinos .imagen__galeria, main .caja__ultimos_destinos .galeria__index .imagen__galeria, main .caja__sobre_mi .imagen__galeria {
   width: 100%;
   padding: 0.5rem;
   border-radius: 15px; }
 
+.caja__destinos .contenedor__destinos .imagen__galeria, main .caja__ultimos_destinos .galeria__index .imagen__galeria, main .caja__sobre_mi .imagen__galeria {
+  width: 100%;
+  padding: 0.5rem;
+  border-radius: 15px; }
+
+/* contacto body */
 main .caja__contacto {
-  margin: 1rem;
+  margin: 1rem 5rem;
   padding: 2rem;
   border-radius: 15px;
   background-color: #B094A8; }
   main .caja__contacto #enviar {
     background-color: #7c4964;
     border: none;
-    width: 15%;
+    width: fit-content;
     margin: 1rem 0px 0.5rem; }
 
 main .caja__logos {
@@ -100,7 +108,9 @@ main .caja__logos {
 #pie_de_pagina {
   background-color: #B094A8;
   text-align: center;
-  padding: 2%; }
+  padding: 2%;
+  position: relative;
+  bottom: 0; }
 
 .caja__destinos .contenedor__destinos .imagen__galeria, main .caja__ultimos_destinos .galeria__index .imagen__galeria, main .caja__sobre_mi .imagen__galeria {
   width: 100%;
@@ -110,14 +120,17 @@ main .caja__logos {
 /* header */
 header {
   background-color: #B094A8;
-  padding-top: 0.5rem; }
+  display: flex;
+  gap: 0px;
+  margin: 0px;
+  padding: 0.5rem 0.7rem;
+  justify-items: center;
+  flex-direction: column; }
   header .nav-link {
-    border-radius: 10px; }
+    border-radius: 10px;
+    width: fit-content; }
   header .nav-link:hover {
     background-color: #7c4964; }
-  header h1:hover {
-    background-color: #7c4964;
-    border-radius: 10px; }
 
 .caja__destinos .contenedor__destinos .imagen__galeria, main .caja__ultimos_destinos .galeria__index .imagen__galeria, main .caja__sobre_mi .imagen__galeria {
   width: 100%;
