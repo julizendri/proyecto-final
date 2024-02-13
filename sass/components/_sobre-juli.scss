@@ -9,7 +9,6 @@
 main {
     .caja__sobre_mi {
         @include grid-columna (1.5fr 2fr, 0.5rem, 2rem, $none);
-        align-items: center;
 
         .imagen__galeria {
             @extend %imagen-galeria;
@@ -35,7 +34,7 @@ main {
         @include grid-columna (repeat(3, 1fr), $none, $none, 3%);
         background-color: nth($colores, 2);
         border-radius: 10px;
-
+        align-content: center;
 
         .items__au_pair {
             padding: 3%;
@@ -55,8 +54,7 @@ main {
 
         @media (max-width: 700px) {
             .imagen__au_pair {
-                width: 49.5%;
-                border-radius: 20px;
+                width: 49.4%;
             }
         }
     }

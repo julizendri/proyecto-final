@@ -243,8 +243,7 @@ main .caja__sobre_mi {
   grid-template-columns: 1.5fr 2fr;
   gap: 0.5rem;
   padding: 2rem;
-  margin: 0px;
-  align-items: center; }
+  margin: 0px; }
   main .caja__sobre_mi .texto__sobre_mi {
     text-align: justify;
     font-size: 1.4rem; }
@@ -263,7 +262,8 @@ main .caja__au_pair {
   padding: 0px;
   margin: 3%;
   background-color: #B094A8;
-  border-radius: 10px; }
+  border-radius: 10px;
+  align-content: center; }
   main .caja__au_pair .items__au_pair {
     padding: 3%;
     align-self: center; }
@@ -276,8 +276,7 @@ main .caja__au_pair {
     padding: 3%; }
   @media (max-width: 700px) {
     main .caja__au_pair .imagen__au_pair {
-      width: 49.5%;
-      border-radius: 20px; } }
+      width: 49.4%; } }
 
 @media (max-width: 700px) {
   main .caja__au_pair {

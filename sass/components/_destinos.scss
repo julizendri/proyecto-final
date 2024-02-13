@@ -9,7 +9,7 @@
     display: grid;
     gap: 0.5rem;
     grid-template-columns: 1fr 1fr;
-    padding: 0px 0.5rem;
+    padding: $none 0.5rem;
 
     .contenedor__destinos {
         justify-content: center;
