@@ -216,7 +216,7 @@ main .texto__recursos {
 
 main .caja__recursos {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 1rem;
   padding: 1rem;
   margin: 0px; }
@@ -228,9 +228,17 @@ main .caja__recursos {
     width: 70%;
     margin: 0px 15%; }
 
-@media (max-width: 750px) {
+@media (max-width: 600px) {
   main .caja__recursos {
-    grid-template-columns: repeat(3, 1fr); } }
+    grid-template-columns: repeat(2, 1fr); } }
+
+@media (min-width: 900px) and (max-width: 1200px) {
+  main .caja__recursos {
+    grid-template-columns: repeat(4, 1fr); } }
+
+@media (min-width: 1201px) {
+  main .caja__recursos {
+    grid-template-columns: repeat(5, 1fr); } }
 
 .caja__destinos .contenedor__destinos .imagen__galeria, main .caja__ultimos_destinos .galeria__index .imagen__galeria, main .caja__sobre_mi .imagen__galeria {
   width: 100%;
