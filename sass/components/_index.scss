@@ -1,0 +1,84 @@
+@import "../base/listas";
+@import "../base/mixins";
+@import "../base/extends";
+@import "../base/variables";
+
+
+/* index body */
+main {
+    .imagenFondo {
+        background-image: url(../imagenes_iconos/fondo1.jpeg);
+        background-size: cover;
+        height: 70vh;
+
+        .bienvenidos {
+            @include textos (1.7rem)
+        }
+
+        .intro {
+            @include textos (1.3rem)
+        }
+
+        @media (max-width: 730px) {
+            .bienvenidos {
+                @include textos-media
+            }
+
+            .intro {
+                @include textos-media;
+                font-size: 1.1rem;
+            }
+        }
+
+        @media (min-width: 818px) and (max-width: 1332px) {
+            .bienvenidos {
+                top: 20%;
+            }
+
+            .intro {
+                top: 20%;
+            }
+        }
+
+        @media (min-width: 1333px) {
+            .bienvenidos {
+                top: 35%
+            }
+
+            .intro {
+                top: 35%;
+            }
+        }
+    }
+
+    .caja__ultimos_destinos {
+        @include grid (0.1fr 3fr, $none, $none, $none);
+        background-color: nth($colores, 1);
+        justify-items: center;
+
+        .galeria__index {
+            @include flex ($none, $none 2rem, $none);
+
+            .imagen__galeria {
+                @extend %imagen-galeria;
+            }
+
+            .destino {
+                font-size: 1.2rem;
+                text-align: center;
+                padding-bottom: 0.5rem;
+            }
+
+            .galeria__index :hover {
+                background-color: nth($colores, 3);
+                border-radius: 15px;
+            }
+        }
+
+        @media (max-width: 750px) {
+            .galeria__index {
+                flex-direction: column;
+            }
+        }
+    }
+}

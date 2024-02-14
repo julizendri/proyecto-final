@@ -1,0 +1,45 @@
+@import "../base/listas";
+@import "../base/mixins";
+@import "../base/extends";
+@import "../base/variables";
+
+/* contacto body */
+
+main {
+    .caja__contacto {
+        margin: 1rem 5rem;
+        padding: 2rem;
+        border-radius: 15px;
+        background-color: nth($colores, 2);
+
+        #enviar {
+            background-color: nth($colores, 3);
+            border: none;
+            width: fit-content;
+            margin: 1rem $none 0.5rem;
+        }
+    }
+
+    .caja__logos {
+        @include flex (5%, 1rem 30%, 0.5rem 1rem);
+        background-color: nth($colores, 2);
+        border-radius: 15px;
+
+        .logo {
+            width: 100%;
+            padding: 5%;
+        }
+
+        @media (min-width: 900px) and (max-width: 1199px) {
+            .caja__logos {
+                margin: 1rem 35%;
+            }
+        }
+
+        @media (min-width: 1200px) {
+            .caja__logos {
+                margin: 1rem 40%;
+            }
+        }
+    }
+}

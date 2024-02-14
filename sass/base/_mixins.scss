@@ -1,0 +1,39 @@
+@mixin textos($font-size) {
+    background-color: nth($colores, 4);
+    position: relative;
+    top: 15%;
+    left: 10%;
+    width: 45%;
+    font-size: $font-size;
+    text-align: center;
+    border-radius: 5px;
+}
+
+@mixin textos-media {
+    left: 25%;
+    width: 50%;
+}
+
+@mixin grid ($tamaño-filas, $gap, $padding, $margin) {
+    display: grid;
+    grid-template-rows: $tamaño-filas;
+    gap: $gap;
+    padding: $padding;
+    margin: $margin;
+}
+
+@mixin grid-columna ($tamaño-filas, $gap, $padding, $margin) {
+    display: grid;
+    grid-template-columns: $tamaño-filas;
+    gap: $gap;
+    padding: $padding;
+    margin: $margin;
+}
+
+@mixin flex ($gap, $margin, $padding) {
+    display: flex;
+    gap: $gap;
+    margin: $margin;
+    padding: $padding;
+    justify-items: center;
+}

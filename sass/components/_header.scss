@@ -1,0 +1,18 @@
+@import "../base/listas";
+@import "../base/mixins";
+@import "../base/extends";
+@import "../base/variables";
+
+/* header */
+header {
+    background-color: nth($colores, 2);
+    @include flex ($none, $none, 0.5rem 0.7rem);
+    flex-direction: column;
+    .nav-link {
+        border-radius: 10px;
+        width: fit-content;
+    }
+    .nav-link:hover {
+        background-color: nth($colores, 3);
+    }
+}

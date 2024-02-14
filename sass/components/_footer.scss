@@ -1,0 +1,13 @@
+@import "../base/listas";
+@import "../base/mixins";
+@import "../base/extends";
+@import "../base/variables";
+
+/* footer */
+#pie_de_pagina {
+    background-color: nth($colores, 2);
+    text-align: center;
+    padding: 2%;
+    position: relative;
+    bottom: 0;
+}

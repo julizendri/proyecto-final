@@ -1,0 +1,46 @@
+@import "../base/listas";
+@import "../base/mixins";
+@import "../base/extends";
+@import "../base/variables";
+
+/* recursos body */
+
+main {
+    .texto__recursos {
+        margin: 1rem;
+        text-align: justify;
+    }
+
+    .caja__recursos {
+        @include grid-columna (repeat(3, 1fr), 1rem, 1rem, $none);
+
+        .carta {
+            padding: 0.5rem;
+        }
+
+        #boton {
+            background-color: nth($colores, 3);
+            border: none;
+            width: 70%;
+            margin: $none 15%;
+        }
+    }
+
+    @media (max-width: 600px) {
+        .caja__recursos {
+            grid-template-columns: repeat(2, 1fr)
+        }
+    }
+
+    @media (min-width: 900px) and (max-width: 1200px) {
+        .caja__recursos {
+            grid-template-columns: repeat(4, 1fr);
+        }
+    }
+
+    @media (min-width: 1201px) {
+        .caja__recursos {
+            grid-template-columns: repeat(5, 1fr);
+        }
+    }
+}

@@ -1,0 +1,42 @@
+@import "../base/listas";
+@import "../base/mixins";
+@import "../base/extends";
+@import "../base/variables";
+
+* {
+    padding: $none;
+    margin: $none;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande';
+}
+
+h1 {
+    text-align: center;
+    padding: $none 1rem;
+}
+
+h2 {
+    padding: 0.5rem $none $none 1rem;
+}
+
+h3 {
+    padding: 0.7rem 1rem 0.3rem 1rem;
+}
+
+.texto__centrado {
+    text-align: center;
+}
+
+.background__color {
+    background-color: nth($colores, 1);
+}
+
+body {
+    height: 100vh;
+    display: grid;
+    grid-template-areas:
+        'header'
+        'main'
+        'footer';
+    grid-template-columns: auto;
+}
