@@ -8,7 +8,8 @@
 
 main {
     .caja__sobre_mi {
-        @include grid-columna (1.5fr 2fr, 0.5rem, 2rem, $none);
+        @include grid-columna (1.5fr 2fr, 0.5rem, 1rem, $none);
+        align-items: center;
 
         .imagen__galeria {
             @extend %imagen-galeria;
@@ -16,7 +17,7 @@ main {
 
         .texto__sobre_mi {
             text-align: justify;
-            font-size: 1.4rem;
+            font-size: 1.1rem;
         }
 
     }
@@ -49,19 +50,19 @@ main {
         .imagen__au_pair {
             width: 100%;
             border-radius: 15px;
-            padding: 3%;
+            padding: 1rem;
         }
 
         @media (max-width: 700px) {
             .imagen__au_pair {
-                width: 49.4%;
+                width: 49.35%;
             }
         }
     }
 
     @media (max-width: 700px) {
         .caja__au_pair {
-            grid-template-rows: 0.1fr 1fr 0.1fr;
+            grid-template-rows: 0.1fr 0.1fr 0.1fr;
             grid-template-columns: 100%;
         }
     }

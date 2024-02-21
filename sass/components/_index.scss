@@ -9,7 +9,7 @@ main {
     .imagenFondo {
         background-image: url(../imagenes_iconos/fondo1.jpeg);
         background-size: cover;
-        height: 70vh;
+        height: 80vh;
 
         .bienvenidos {
             @include textos (1.7rem)
